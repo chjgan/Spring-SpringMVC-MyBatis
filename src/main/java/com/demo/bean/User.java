@@ -1,7 +1,12 @@
 package com.demo.bean;
 
 public class User {
-    private Integer id;
+    @Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", password=" + password + "]";
+	}
+
+	private Integer id;
 
     private String name;
 
